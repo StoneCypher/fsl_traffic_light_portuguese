@@ -1,0 +1,17 @@
+machine_name     : "Semáforo";
+machine_author   : "Francisco / fcojr";
+machine_comment  : "Translation of the 4-state traffic light to Portuguese";
+machine_license  : MIT;
+machine_language : pt;
+machine_version  : 1.0.0;
+fsl_version      : 1.0.0;
+
+
+
+
+
+Desligado 'Habilitar' -> Vermelho;
+
+Vermelho 'Prossiga' => Verde 'Prossiga' => Amarelo 'Prossiga' => Vermelho;
+
+[Verde Amarelo Vermelho] 'Desabilitar' ~> Desligado;
